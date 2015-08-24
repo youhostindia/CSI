@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Image Gallery</title>
+    
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/slide.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/content.css" rel="stylesheet">
+    <style>
+    
+      
+    
+    
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  
+  
+  <?php 
+if(isset($_POST['submit'])){
+    $to = "admin@youhostindia.com"; // this is your Email address
+    $from = $_POST['InputEmail']; // this is the sender's Email address
+    $first_name = $_POST['InputName'];
+   
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $InputName . "  " wrote the following:" . "\n\n" . $_POST['InputMessage'];
+    $message2 = "Here is a copy of your message " . $InputName . "\n\n" . $_POST['InputMessage'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+  
+  <div class="container">
+  
+  <img src="logo.png" width="700"  height="100" class="img-responsive"alt="CSI Ascention Church" title="CSI Ascention Church">
+</a>
+      <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Our Church <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Sunday Service</a></li>
+            <li><a href="#">Youth Meeting</a></li>
+            <li><a href="#">Sunday School</a></li>
+          
+          </ul>
+        </li>
+         
+          <li><a href="#">About Us</a></li>
+         <li><a href="Gallery.html">Image Gallery</a></li>
+         <li><a href="#">Services</a></li>
+         <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+          </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+</div>
+
+<div class="container">
+
+<h1>Image Gallery</h1>
+<h3>CSI Ascention Church</h3>
+
+<div id="cp_widget_fb05ac11-9f1a-4250-9292-64e066c1c2cb">...</div><script type="text/javascript">
+var cpo = []; cpo["_object"] ="cp_widget_fb05ac11-9f1a-4250-9292-64e066c1c2cb"; cpo["_fid"] = "A8OAHpsuD5N7";
+var _cpmp = _cpmp || []; _cpmp.push(cpo);
+(function() { var cp = document.createElement("script"); cp.type = "text/javascript";
+cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
+var c = document.getElementsByTagName("script")[0];
+c.parentNode.insertBefore(cp, c); })(); </script><noscript>Powered by Cincopa <a href='http://www.cincopa.com/video-hosting'>Video Hosting for Business</a> solution.<span>New Gallery 2015/6/15</span><span>Little Angels English Medium High School</span><span>Students Won the Sheild in the Games</span><span>cameramake</span><span> EASTMAN KODAK COMPAN</span><span>height</span><span> 2176</span><span>orientation</span><span> 1</span><span>flash</span><span> 9</span><span>originaldate</span><span> 11/21/2012 10:00:56 PM</span><span>width</span><span> 3264</span><span>cameramodel</span><span> KODAK EASYSHARE C140</span><span>Teacher Inspecting the students</span><span>cameramake</span><span> EASTMAN KODAK COMPAN</span><span>height</span><span> 2176</span><span>orientation</span><span> 1</span><span>flash</span><span> 9</span><span>originaldate</span><span> 12/31/2012 5:27:27 AM</span><span>width</span><span> 3264</span><span>cameramodel</span><span> KODAK EASYSHARE C140</span><span>School Assembly</span><span>Correspondent Addressing School</span><span>cameramake</span><span> EASTMAN KODAK COMPAN</span><span>height</span><span> 2176</span><span>orientation</span><span> 1</span><span>flash</span><span> 9</span><span>originaldate</span><span> 12/31/2012 10:06:54 AM</span><span>width</span><span> 3264</span><span>cameramodel</span><span> KODAK EASYSHARE C140</span><span>Students In Assembly</span><span>cameramake</span><span> EASTMAN KODAK COMPAN</span><span>height</span><span> 2176</span><span>orientation</span><span> 1</span><span>flash</span><span> 9</span><span>originaldate</span><span> 12/31/2012 10:07:46 AM</span><span>width</span><span> 3264</span><span>cameramodel</span><span> KODAK EASYSHARE C140</span><span>School Bus</span><span>Joseph and School Bus for children transportation</span><span>cameramake</span><span> EASTMAN KODAK COMPAN</span><span>height</span><span> 2176</span><span>orientation</span><span> 1</span><span>flash</span><span> 9</span><span>originaldate</span><span> 1/1/2013 3:18:51 PM</span><span>width</span><span> 3264</span><span>cameramodel</span><span> KODAK EASYSHARE C140</span></noscript>
+
+
+</div>
+
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<footer>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Our Church </h3>
+                    <ul>
+                        <li> <a href="#"> Sunday Service </a> </li>
+                        <li> <a href="#"> Youth Meeting</a> </li>
+                        <li> <a href="#"> Sunday School</a> </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Services </h3>
+                    <ul>
+                        <li> <a href="#"> About Us </a> </li>
+                        <li> <a href="#"> News & Activities </a> </li>
+                     
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Contact Us </h3>
+                    <ul>
+                        <li> <a href="contact.html"> Contact Us </a> </li>
+                       
+                        
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                <h3>Social</h3>
+                    <ul class="social">
+                        <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.row--> 
+        </div>
+        <!--/.container--> 
+    </div>
+    <!--/.footer-->
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left"> Copyright © C S I Ascention Church 2013-2015. All right reserved. </p>
+            <div class="pull-right">
+                <p>Powered By Youhostindia.com</p>
+            </div>
+        </div>
+    </div>
+    <!--/.footer-bottom--> 
+</footer>
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

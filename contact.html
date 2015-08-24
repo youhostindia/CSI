@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Contact Us</title>
+    
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/slide.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/content.css" rel="stylesheet">
+    <style>
+    
+      
+    
+    
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  
+  
+  <?php 
+if(isset($_POST['submit'])){
+    $to = "admin@youhostindia.com"; // this is your Email address
+    $from = $_POST['InputEmail']; // this is the sender's Email address
+    $first_name = $_POST['InputName'];
+   
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $InputName . "  " wrote the following:" . "\n\n" . $_POST['InputMessage'];
+    $message2 = "Here is a copy of your message " . $InputName . "\n\n" . $_POST['InputMessage'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+  
+  <div class="container">
+  
+   <img src="logo.png" width="700"  height="100" class="img-responsive"alt="CSI Ascention Church" title="CSI Ascention Church">
+</a>
+      <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Our Church <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Sunday Service</a></li>
+            <li><a href="#">Youth Meeting</a></li>
+            <li><a href="#">Sunday School</a></li>
+          
+          </ul>
+        </li>
+         
+          <li><a href="#">About Us</a></li>
+         <li><a href="Gallery.html">Image Gallery</a></li>
+         <li><a href="#">Services</a></li>
+         <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+          </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+</div>
+
+<div class="container">
+<div class="row">
+   <form role="form" action="#" method="post" >
+    <div class="col-lg-6">
+      <div class="well well-sm"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Required Field</strong></div>
+      <div class="form-group">
+        <label for="InputName">Your Name</label>
+        <div class="input-group">
+          <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+      </div>
+      <div class="form-group">
+        <label for="InputEmail">Your Email</label>
+        <div class="input-group">
+          <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+      </div>
+      <div class="form-group">
+        <label for="InputMessage">Message</label>
+        <div class="input-group"
+>
+          <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+      </div>
+           <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+    </div>
+  </form>
+  <hr class="featurette-divider hidden-lg">
+  <div class="col-lg-5 col-md-push-1">
+    <address>
+    <h3>Office Location</h3>
+    <p class="lead"><a href="https://www.google.co.in/maps/place/You+Host+India/@12.986442,80.227508,17z/data=!3m1!4b1!4m2!3m1!1s0x3a525d8125a575c9:0xcee61a26bb86ccea?hl=en">CSI Ascention Church<br>Behind Shankunthala Function Hall,<br> Nandyal Road, Kurnool <br>India </a><br>
+    
+      Office num: 08518 271885<br>
+      
+     
+     
+    </address>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<footer>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Our Church </h3>
+                    <ul>
+                        <li> <a href="#"> Sunday Service </a> </li>
+                        <li> <a href="#"> Youth Meeting</a> </li>
+                        <li> <a href="#"> Sunday School</a> </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Services </h3>
+                    <ul>
+                        <li> <a href="#"> About Us </a> </li>
+                        <li> <a href="#"> News & Activities </a> </li>
+                     
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Contact Us </h3>
+                    <ul>
+                        <li> <a href="contact.html"> Contact Us </a> </li>
+                       
+                        
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                <h3>Social</h3>
+                    <ul class="social">
+                        <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.row--> 
+        </div>
+        <!--/.container--> 
+    </div>
+    <!--/.footer-->
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left"> Copyright © C S I Ascention Church 2013-2015. All right reserved. </p>
+            <div class="pull-right">
+                <p>Powered By Youhostindia.com</p>
+            </div>
+        </div>
+    </div>
+    <!--/.footer-bottom--> 
+</footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
